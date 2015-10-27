@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>cal1</title>
+		<meta name="author" content="sharmin" />
+		<!-- Date: 2015-10-26 -->
+		<link rel= "stylesheet" type "text/css" href="cal1design.css" >
+	</head>
+	<title>CALCULATOR </title>
+	<body>
+			<div id = "calculator">
+				<form>
+					<input type= "text" id="display" disabled> <br>
+					<input type ="button" value="C" id="keys1" onclick="intoscreen('C')">
+					<input type ="button" value="<--" id="keys1" onclick="backspace()">
+					<input type ="button" value="X^2" id="keys1" onclick="power(2)">
+					<input type ="button" value="%" id="keys1" onclick="percent(0.01)"> <br>
+					<input type ="button" value="9" id="keys" onclick="intoscreen('9')">
+					<input type ="button" value="8" id="keys" onclick="intoscreen('8')">
+					<input type ="button" value="7" id="keys" onclick="intoscreen('7')">
+					<input type ="button" value="+" id="keys1" onclick="intoscreen('+')"> <br>
+					<input type ="button" value="6" id="keys" onclick="intoscreen('6')">
+					<input type ="button" value="5" id="keys" onclick="intoscreen('5')">
+					<input type ="button" value="4" id="keys" onclick="intoscreen('4')">
+					<input type ="button" value="-" id="keys1" onclick="intoscreen('-')"> <br>
+					<input type ="button" value="3" id="keys" onclick="intoscreen('3')">
+					<input type ="button" value="2" id="keys" onclick="intoscreen('2')">
+					<input type ="button" value="1" id="keys" onclick="intoscreen('1')">
+					<input type ="button" value="*" id="keys1" onclick="intoscreen('*')"> <br>
+					<input type ="button" value="0" id="keys" onclick="intoscreen('0')">
+					<input type ="button" value="." id="keys" onclick="intoscreen('.')">
+					<input type ="button" value="=" id="equal" onclick="answer()">
+					<input type ="button" value="/" id="keys1" onclick="intoscreen('/')">
+					
+				</form>
+				<script src = "cal1logic.js"></script>
+	</body>
+</html>
+
